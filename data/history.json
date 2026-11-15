@@ -524,5 +524,14 @@
     "music": "Vois_Sur_Ton_Chemin(0).mp3",
     "engine": "v2",
     "scheduled": true
+  },
+  {
+    "date": "20261115-103058",
+    "topic": "v2:f1-world-titles",
+    "title": "Hamilton vs Schumacher vs Verstappen World Titles 🏎️🏆",
+    "video_id": "zgB6QKEm0ek",
+    "music": "HEAVENLY_JUMPSTYLE(0).mp3",
+    "engine": "v2",
+    "scheduled": true
   }
 ]
