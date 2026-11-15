@@ -205,5 +205,14 @@
     "music": "NUNCA_MUDA___PHONK_(0).mp3",
     "engine": "v2",
     "scheduled": true
+  },
+  {
+    "date": "20261115-102013",
+    "topic": "v2:galatasaray-vs-fenerbahce",
+    "title": "Galatasaray vs Fenerbahçe Şampiyonluk Yarışı 🦁🐤",
+    "video_id": "TPSTODq7WTM",
+    "music": "Cuando_se_te_moja_la_tarea_2(0).mp3",
+    "engine": "v2",
+    "scheduled": true
   }
 ]
