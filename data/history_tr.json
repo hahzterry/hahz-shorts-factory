@@ -295,5 +295,14 @@
     "music": "MONTAGEM_PERIGOSA(0).mp3",
     "engine": "v2",
     "scheduled": true
+  },
+  {
+    "date": "20261117-193209",
+    "topic": "v2:world-cup-top-scorers",
+    "title": "Dünya Kupası Tarihinin En Golcüleri 😱⚽️",
+    "video_id": "hMkfeqDfcXk",
+    "music": "MONTAGEM_RUGADA(0).mp3",
+    "engine": "v2",
+    "scheduled": true
   }
 ]
