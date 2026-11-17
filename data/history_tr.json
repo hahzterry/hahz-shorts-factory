@@ -268,5 +268,14 @@
     "music": "MONTAGEM_LADRAO_SLOWED(0).mp3",
     "engine": "v2",
     "scheduled": true
+  },
+  {
+    "date": "20261117-063703",
+    "topic": "v2:real-vs-barca-laliga",
+    "title": "Real Madrid vs Barcelona La Liga Şampiyonlukları ⚪🔵🔴",
+    "video_id": "JyV6IlQTYlY",
+    "music": "HEAVENLY_JUMPSTYLE(0).mp3",
+    "engine": "v2",
+    "scheduled": true
   }
 ]
