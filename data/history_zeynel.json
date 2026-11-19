@@ -511,5 +511,14 @@
     "music": "ESTA_NOCHE(0).mp3",
     "engine": "studio",
     "scheduled": true
+  },
+  {
+    "date": "20261119-153621",
+    "topic": "v2:most-champions-league-wins",
+    "title": "MOST CHAMPIONS LEAGUE WINS! 😱🏆",
+    "video_id": null,
+    "music": "FUNK_DO_BALKAN__Slowed___Reverb__[BRAZILIAN_PHONK](0).mp3",
+    "engine": "studio",
+    "scheduled": true
   }
 ]
