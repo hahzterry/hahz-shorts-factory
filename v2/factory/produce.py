@@ -30,7 +30,6 @@ HISTORY = ROOT / (os.environ.get("HISTORY_FILE") or "data/history.json")  # each
 OUT = ROOT / "output"
 PUBLIC_MUSIC = V2 / "public" / "music"
 MUSIC_REPEAT_GAP = 12
-RECENT_GAP = 6  # topics from the last 6 uploads sit out
 MAX_STEPS = 10  # more steps than this in 18 s and the gains flash by too fast to read
 STUDIO_STYLE = ROOT / "config" / "style_zeynel.json"
 BASS_SFX = {
@@ -54,11 +53,13 @@ def pick_topic(history, forced):
         if forced not in topics:
             sys.exit(f"konu yok: {forced} (var olanlar: {', '.join(topics)})")
         return forced
-    # Skip the last few topics, then pick weighted by past performance; topics without data get the median
-    # so new ones still get tried. Shorts live ~3-4 days, so a strong topic can come back after a week.
-    used = [(h.get("topic") or "").removeprefix("v2:") for h in history if h.get("video_id")]
-    recent = set(used[-RECENT_GAP:])
-    pool = [t for t in topics if t not in recent] or topics
+    # A topic goes up once per channel. Re-uploads were buried by YouTube as duplicates (Nov 2026: first uploads
+    # ~1,900 views on average, repeats 0-20), so with no fresh topic left the run skips instead of uploading.
+    used = {(h.get("topic") or "").removeprefix("v2:") for h in history if h.get("video_id") or h.get("scheduled")}
+    pool = [t for t in topics if t not in used]
+    if not pool:
+        print(f"[v2] yeni konu kalmadı ({len(topics)} konunun hepsi bu kanalda yüklendi); tekrar yüklemiyorum. v2/topics'e konu ekle.")
+        sys.exit(0)
     scores = load_scores(history)
     known = sorted(scores[t] for t in topics if t in scores) or [1]
     median = known[len(known) // 2]
