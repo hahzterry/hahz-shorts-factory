@@ -358,5 +358,14 @@
     "music": "Ariis_-_MANDA_BALA_[Brazilian_Phonk](0).mp3",
     "engine": "v2",
     "scheduled": true
+  },
+  {
+    "date": "20261119-172440",
+    "topic": "v2:messi-ronaldo-ballon-dor",
+    "title": "Messi vs Ronaldo Ballon d'Or Yarışı 🏆🔥",
+    "video_id": "yYNYQniIsMw",
+    "music": "The_Automotivo_Infernal_1.0_-_Purple(0).mp3",
+    "engine": "v2",
+    "scheduled": true
   }
 ]
